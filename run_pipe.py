@@ -5,8 +5,7 @@ env = "./envs/TRAP_BW.env"
 
 # Files in the pipeline  
 generate_file = "generate.py"
-#condense_file = "/work/thsu/rschanta/mike_dem/pipeline/process.py"
-#post_file =  "/work/thsu/rschanta/RTS-PY/USACE/TRAP_BW/Unified_Test/pipe/better_code.py"
+condense_file = "process.py"
 
 # Standard Slurm Flags
 pbs_defaults = {
@@ -27,9 +26,7 @@ pipeline = HPC.PBS_Pipeline(pbs_vars = pbs_defaults,
 # Steps of the pipeline
 steps = {
     HPC.run_py: {"file": generate_file, "pbs_edit": {"-N": "generate"}},
-    HPC.run_fw_run_py_del_A: {"file": generate_file,"pbs_edit": {"-J": "1-24","-N": "main_array"}},
-    #HPC.run_py_A: {"file": post_file,"slurm_edit": {"array": "1-8","job-name": "postprocess"}}
-    #pipe.postprocess_individual: {"file": postc_file}
+    HPC.run_fw_run_py_del_A: {"file": generate_file,"pbs_edit": {"-J": "1-8","-N": "main_array"}},
 }
 
 # Run the pipeline
