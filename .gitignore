@@ -1,0 +1,15 @@
+# Ignore high-level runtime/output directories
+/batch_scripts/
+/envs/
+/input_sum/
+/test_out/
+
+# Ignore any temporary or checkpoint files
+*.tmp
+*.bak
+*.out
+*.err
+
+# Ignore Python cache
+__pycache__/
+*.pyc
