@@ -4,23 +4,23 @@
 * 1. [ Hydrodynamics and Wavemaker Specification](#HydrodynamicsandWavemakerSpecification)
 * 2. [ Grid Specification](#GridSpecification)
 * 3. [ Breakwater Geometry](#BreakwaterGeometry)
-      * 3.1. [ Trapezoidal Breakwater](#TrapezoidalBreakwater)
-      * 3.2. [ Grid Imprecision](#GridImprecision)
-      * 3.3. [ Flat Tanks](#FlatTanks)
-      * 3.4. [ Summary](#Summary)
+	* 3.1. [ Trapezoidal Breakwater](#TrapezoidalBreakwater)
+	* 3.2. [ Grid Imprecision](#GridImprecision)
+	* 3.3. [ Flat Tanks](#FlatTanks)
+	* 3.4. [ Summary](#Summary)
 * 4. [ Breakwater Properties](#BreakwaterProperties)
 * 5. [ Setting up Regions of the Domain](#SettingupRegionsoftheDomain)
 * 6. [ Timing](#Timing)
 * 7. [ Summary](#Summary-1)
 * 8. [ Selection of Parameters](#SelectionofParameters)
-      * 8.1. [ Parameters Kept Constant](#ParametersKeptConstant)
-      * 8.2. [ The Period-Depth Plane](#ThePeriod-DepthPlane)
-      * 8.3. [ Geometry](#Geometry)
+	* 8.1. [ Parameters Kept Constant](#ParametersKeptConstant)
+	* 8.2. [ The Period-Depth Plane](#ThePeriod-DepthPlane)
+	* 8.3. [ Geometry](#Geometry)
 
 <!-- vscode-markdown-toc-config
-      numbering=true
-      autoSave=true
-      /vscode-markdown-toc-config -->
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 ##  1. <a name='HydrodynamicsandWavemakerSpecification'></a> Hydrodynamics and Wavemaker Specification
 All cases are run as one-dimensional models, using an internal wavemaker. Cases may be constructed as either _regular_ or _irregular_. 

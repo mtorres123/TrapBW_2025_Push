@@ -1,5 +1,5 @@
 import funwave_amp.HPC.USACE_pbs as HPC
-
+import funwave_amp.HPC.UD_slurm as HPC
 # Inputs to Change
 env = "./envs/TRAP_BW.env"
 
@@ -26,7 +26,7 @@ pipeline = HPC.PBS_Pipeline(pbs_vars = pbs_defaults,
 # Steps of the pipeline
 steps = {
     HPC.run_py: {"file": generate_file, "pbs_edit": {"-N": "generate"}},
-    HPC.run_fw_run_py_del_A: {"file": generate_file,"pbs_edit": {"-J": "1-8","-N": "main_array"}},
+    HPC.run_fw_run_py_del_A: {"file": condense_file,"pbs_edit": {"-J": "1-8","-N": "main_array"}},
 }
 
 # Run the pipeline
