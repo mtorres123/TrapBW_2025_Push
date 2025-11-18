@@ -160,38 +160,3 @@ Thus, a problem in this test suite is fully specified by setting the following p
 > **Breakwater Geometry Parameters**: `relF`, `m_slope`, `PI_4`, `FLAT_OR_TRAP`
 >
 > **Breakwater Properties**: `USE_CDBWAC`, `CDBWAC`
-
-
-##  8. <a name='SelectionofParameters'></a> Selection of Parameters
-
-###  8.1. <a name='ParametersKeptConstant'></a> Parameters Kept Constant
-For the purposes of this study, all of the $\pi$ parameters are kept constant, keeping the relative dimensions of the domain and the width of the crest of the structure constant. 
-
-Additionally, the relative freeboard `relF` relative wave height `relH` are kept constant.
-
-Also, a single slope of `m_slope` is considered in this study.
-
-These are the values used:
-
-| **Parameter** | Value | | **Parameter** | Value
-|-------|-------|--|-- | --|
-| `PI_1` | 2 | | `relF`| 0.1 |
-| `PI_2` | 2 | | `relH`| 0.1 |
-| `PI_3` | 2 | || |
-| `PI_4` | 2 | | `m_slope` | 3 |
-| `PI_5` | 2 | | |
-| `PI_6` | 2 | | |
-
-###  8.2. <a name='ThePeriod-DepthPlane'></a> The Period-Depth Plane
-For those problem, we further restrict our position in the `Tperiod`-`DEP_WK` plane to cases where the hydrodynamic condition of $kh>\pi$ and `DX`>$h/15$ can simultaneously be true, resulting in the following possible pairs for integer values of $T-h$
-
-![Period-Depth Plane](./doc_figures/png/216_points.png)
-
-To further restrict the domain, only $T\leq 8$ are used, resulting in 56 possible values. 
-
-###  8.3. <a name='Geometry'></a> Geometry
-Both possibilities of geometry are considered
-
-| **Parameter** | Possible Values |
-|-------|-------|
-| `FLAT_OR_TRAP` | `FLAT`, `TRAP` |
