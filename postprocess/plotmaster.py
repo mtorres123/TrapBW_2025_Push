@@ -200,6 +200,7 @@ def compare_PSD(snum,ppath, data, stations,steady, labels,xfactor,fnames):
     
 
 def compute_PSD(time,eta):
+    print(eta.shape)
     fftwindows = [2048,1024,512,256,128,64]
     dt = round(np.diff(time).mean(),2)
     freqS = 1.0/dt # is a sampling rate (Hz)
